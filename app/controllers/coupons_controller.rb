@@ -16,7 +16,7 @@ class CouponsController < ApplicationController
     @coupon = Coupon.new
     @coupon.coupon_code = params[:coupon_code]
     @coupon.store = params[:store]
-    require 'pry'
+    require pry
     binding.pry
     @coupon.save
     redirect_to coupon_path(@coupon)
