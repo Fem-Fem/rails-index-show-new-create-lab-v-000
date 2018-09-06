@@ -1,6 +1,6 @@
 <% @coupons.each do |coupon| %>
   <div>
-    <a href="/coupons/1">
+    <a href="/coupons/#{coupon.id}">
       <%= binding.pry %>
       <%= coupon.store %>
     </a>
