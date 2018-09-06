@@ -1,7 +1,6 @@
 <% @coupons.each do |coupon| %>
   <div>
-    <a href="/coupons/#{coupon.id}">
+    <%= link_to student.to_s, student_path(student.id) %>
       <%= coupon.store %>
-    </a>
   </div>
 <% end %>
